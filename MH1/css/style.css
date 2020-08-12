@@ -1,0 +1,326 @@
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 15rem;
+    background-image: linear-gradient(-180deg, #fff4db, #ffcd67);
+    position: fixed;
+    height: 100%;
+    min-height: 720px;
+    overflow: hidden;
+    border: 1px solid rgba(51, 51, 51, 0.178);
+
+  box-shadow: 10px 0 5px -2px #888;
+  }
+  
+  html,body{height:100%;}
+  
+  .carousel-inner{height:100vh}
+  .fill{width:100%;height:100vh;background-position:center;background-size:cover;}
+
+  
+
+  .loginsidebar {
+    margin: 0;
+    padding: 0;
+    width: 20rem;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    min-height: 720px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+
+  box-shadow: 10px 0 5px -2px rgb(255, 255, 255);
+  }
+  
+  .navbar a {
+    
+    color: black;
+    padding: 2.25rem;
+    text-align: center;
+    text-decoration: none;
+  
+    
+  }
+  
+  
+  .navbar a:hover {
+    background-color: #fa8f03;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 15rem;
+    padding-left: 1.25rem;
+    padding-top: 1.25rem;
+ 
+   
+  }
+
+  div.carcontent {
+    margin-left: 20rem;
+   
+ 
+   
+  }
+
+
+
+.navbar-nav {
+  width: 100%;
+ 
+  
+
+}
+
+.navbar{
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+}
+  
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  
+  
+  background-color: #f1a009;
+}
+
+#calendar {
+  max-width: 1100PX;
+  margin:  auto;
+}
+
+.fc .fc-button-primary{
+
+  background-color: var(--fc-button-bg-color, #2198d8) !important;
+  
+}
+
+thead{
+  background-color: #2198d8 !important;
+}
+
+@media (max-width: 576px)  {
+  
+
+  div.content {
+    
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    
+  }
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(-180deg, #fff4db, #ffcd67);
+    position: relative;
+    height: auto;
+    min-height: auto;
+    overflow: hidden;
+    border: 1px solid rgba(51, 51, 51, 0.178);
+
+  box-shadow: 0 4px 2px -2px #888;
+
+    
+  }
+
+  .loginsidebar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    min-height: auto;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+  
+  box-shadow: 10px 0 5px -2px rgb(255, 255, 255);
+  }
+
+  .carcontent{
+    display:none;
+  }
+
+  #cust1{
+    float: right;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  #cust3{
+    float: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    
+  }
+
+  hr{
+    display: none;
+  }
+
+  .navbar-nav {
+    width: 217%;
+    padding-bottom: 0;
+    
+  }
+
+  .navbar{
+    position: relative;
+    
+    width: 50%;
+  }
+
+  .navbar a {
+    
+    color: black;
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    
+  
+    
+  }
+  #calendar {
+    max-width: 100%;
+    height: 600px;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+  }
+
+  img#logo {
+    display: none;
+  }
+
+  .fc .fc-toolbar-title {
+    font-size: 1.75em;
+    text-align: center;
+}
+  .fc .fc-button-primary{
+
+    background-color: var(--fc-button-bg-color, #2198d8) !important;
+    
+}
+}
+
+@media (max-width: 960px) and (min-width: 577px) {
+  
+
+  div.content {
+    
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    
+  }
+#cust1{
+  float: right;
+  width: 25%;
+  padding-top: 1rem;
+}
+  .flex-column {
+    -webkit-box-orient: horizontal!important;
+    -webkit-box-direction: normal!important;
+    -ms-flex-direction: row!important;
+    flex-direction: row!important;
+}
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(-180deg, #fff4db, #ffcd67);
+    position: relative;
+    height: auto;
+    min-height: auto;
+    overflow: hidden;
+    border: 1px solid rgba(51, 51, 51, 0.178);
+
+  box-shadow: 0 4px 2px -2px #888;
+}
+
+.loginsidebar {
+  margin: 0;
+  padding: 0;
+  width: 20rem;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  min-height: 720px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.178);
+
+box-shadow: 10px 0 5px -2px rgb(255, 255, 255);
+}
+
+hr{
+  display: none;
+}
+#cust2{
+  float: left;
+  width: 50%;
+}
+  .navbar-nav {
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+    float: left;
+    
+  }
+
+  .navbar{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    float: left;
+  }
+
+  .navbar a {
+    
+    color: black;
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    
+  
+    
+  }
+  #calendar {
+    max-width: 100%;
+    height: 600px;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+  }
+
+  img#logo {
+    display: none;
+  }
+
+  img#loginlogo {
+    padding: 0;
+  }
+
+  .fc .fc-toolbar-title {
+    font-size: 1.75em;
+    text-align: center;
+}
+  .fc .fc-button-primary{
+
+    background-color: var(--fc-button-bg-color, #2198d8) !important;
+    
+}
+}
+
+
+
+
+
+
