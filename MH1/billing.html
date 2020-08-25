@@ -27,16 +27,16 @@
     <ul class ="nav navbar-nav flex-column nav-pills" id="pills-tab">
    
     <li class ="nav-item">
-    <a class ="nav-link active" data-toggle="pill" href="#"> Scheduling </a>
+    <a class ="nav-link"  href="index.html"> Scheduling </a>
     </li>
     <li class ="nav-item">
-    <a class ="nav-link" data-toggle="pill" href="#"> Provider </a>
+    <a class ="nav-link"  href="provider.html"> Provider </a>
     </li>
     <li class ="nav-item">
-    <a class ="nav-link" data-toggle="pill" href="#"> Billing </a>
+    <a class ="nav-link active"  href="billing.html"> Billing </a>
     </li>
     <li class ="nav-item">
-    <a class ="nav-link" data-toggle="pill" href="#"> Admin </a>
+    <a class ="nav-link"  href="admin.html"> Admin </a>
     </li>
     </ul>
 </div>
@@ -44,7 +44,187 @@
   </div>
   <body>
       <div class="content">
-        <div id='calendar'></div>
+        
+          <form style="width: 95%; padding-bottom: 20px;">
+            <div class="form-row">
+              <label class="control-label" style="font-size: 28px; padding-bottom: 10px;">Billing</label>
+              </div>
+           <div class="card">
+             <div class="card-body">
+           
+             <div class="form-row">
+               <div class="col">
+                 <label><b>Patient Accounting</b></label><br>
+                 <a href="#">Enter Patient Payment</a><br>
+                 <a href="#">Enter Misc Charge</a><br>
+                 <a href="#">Enter Refund</a><br>
+                 <a href="#">Enter Misc Credit</a><br>
+                 <a href="#">Pt Aging & Batch Statements</a>
+               </div>
+               <div class="col">
+                <label><b>Insurance Claims</b></label><br>
+                <a href="#">Submit EDI Claims</a><br>
+                <a href="#">Create CMS-1500</a><br>
+                <a href="#">Create Superbill</a><br>
+                <a href="#">Mark External Items</a>
+               </div>
+               <div class="col">
+                <label><b>Insurance Payments</b></label><br>
+                <a href="#">Enter Insurance Payment</a><br>
+                <a href="#">EDI Claim History</a><br>
+                <a href="#">External</a><br>
+                <a href="#">Insurance Aging Report</a>
+               </div>
+               <div class="col">
+                <label><b>More Reports</b></label><br>
+                <a href="#">Revenue Report</a><br>
+                <a href="#">Write-Off Report</a><br>
+                <a href="#">Note Count Report</a>
+               </div>
+             </div>
+</div>
+        </div>
+
+           </form>
+          
+
+         
+          <form style="width: 95%; padding-bottom: 20px;">
+            <div class="form-row">
+              <label class="control-label" style="font-size: 28px; padding-bottom: 10px;">Search Billing Transactions</label>
+              </div>
+           <div class="card">
+             <div class="card-body">
+           
+           
+             <div class="form-row">
+               <div class="col-md-8">
+                <div class="row">
+                  <div>
+                      <label style="padding-top:6px; padding-right: 10px;" class="control-label">Clinician:</label>
+                  </div>
+                  <div>
+                    <select class="form-control" style="width: 225px;">
+                      <option selected>Any Clinician</option>
+                      <option>Test Clinician</option>
+                      <option>Test Payor</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="row">
+                <div>
+                    <label style="padding-top:6px; padding-right: 37px;" class="control-label">Type:</label>
+                </div>
+                <div>
+                  <select class="form-control" style="width: 225px;">
+                    <option selected>Any Type</option>
+                    <option>Type 1</option>
+                    <option>Type 2</option>
+                  </select>
+                </div>
+            </div>
+            <div class="row">
+              <div>
+                  <label style="padding-top:6px; padding-right: 10px;" class="control-label">Location:</label>
+              </div>
+              <div>
+                <select class="form-control" style="width: 225px;">
+                  <option selected>Any Location</option>
+                  <option>Nashville Site</option>
+                  <option>Memphis Hospital</option>
+                </select>
+              </div>
+          </div>
+          <div class="row">
+            <div>
+                <label style="padding-top:6px; padding-right: 37px;" class="control-label">Date:</label>
+            </div>
+            <div>
+              <select class="form-control" style="width: 225px;">
+                <option selected>Last 7 Days</option>
+                <option>Last Month</option>
+                <option>Last Year</option>
+              </select>
+            </div>
+            <div>
+              <label style="padding-top:6px; padding-right: 5px; padding-left: 5px;" class="control-label">:</label>
+          </div>
+            <div>
+            <input type="date" class="form-control">
+            </div>
+            <div>
+              <label style="padding-top:6px; padding-right: 5px; padding-left: 5px;" class="control-label">to</label>
+          </div>
+          <div>
+            <input type="date" class="form-control" style="padding-right: 5px;">
+            </div>
+        </div>
+        <div class="row">
+          <div>
+              <label style="padding-top:6px; padding-right: 28px;" class="control-label">Status:</label>
+          </div>
+          <div>
+            <select class="form-control" style="width: 225px;">
+              <option selected>Any Status</option>
+              <option>Status 1</option>
+              <option>Status 2</option>
+            </select>
+          </div>
+      </div>
+               </div>
+              
+               <div class="col">
+                <div class="row">
+                  <div>
+                      <label style="padding-top:6px; padding-right: 32px;" class="control-label">Payer:</label>
+                  </div>
+                  <div>
+                    <select class="form-control" style="width: 225px;">
+                      <option selected>Any Payer or Direct from Patient</option>
+                      <option>Direct</option>
+                      <option>Test Payor</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="row">
+                <div>
+                    <label style="padding-top:6px; padding-right: 15px;" class="control-label">Method:</label>
+                </div>
+                <div>
+                  <select class="form-control" style="width: 225px;">
+                    <option selected>Any Submission Method</option>
+                    <option>Method 1</option>
+                    <option>Method 2</option>
+                  </select>
+                </div>
+            </div>
+            <div class="row">
+              <div>
+                  <label style="padding-top:6px; padding-right: 32px;" class="control-label">Items:</label>
+              </div>
+              <div>
+                <select class="form-control" style="width: 225px;">
+                  <option selected>Charges and Payments</option>
+                  <option>Charges</option>
+                  <option>Payments</option>
+                </select>
+              </div>
+          </div>
+          <div class="row">
+            <div>
+                <label style="padding-top:6px; padding-right: 55px;" class="control-label">ID:</label>
+            </div>
+            <div>
+              <input type="text" class="form-control" placeholder="Check Number or Transaction ID" style="width: 225px;">
+            </div>
+        </div>
+       
+               </div>
+             
+             </div>
+           </form>
+         </div>
+
       </div>
    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
