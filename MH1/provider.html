@@ -27,26 +27,100 @@
     <ul class ="nav navbar-nav flex-column nav-pills" id="pills-tab">
    
     <li class ="nav-item">
-    <a class ="nav-link active" data-toggle="pill" href="#"> Scheduling </a>
+    <a class ="nav-link"  href="index.html"> Scheduling </a>
     </li>
     <li class ="nav-item">
-    <a class ="nav-link" data-toggle="pill" href="#"> Provider </a>
+    <a class ="nav-link active"  href="provider.html"> Provider </a>
     </li>
     <li class ="nav-item">
-    <a class ="nav-link" data-toggle="pill" href="#"> Billing </a>
+    <a class ="nav-link"  href="#"> Billing </a>
     </li>
     <li class ="nav-item">
-    <a class ="nav-link" data-toggle="pill" href="#"> Admin </a>
+    <a class ="nav-link"  href="#"> Admin </a>
     </li>
     </ul>
 </div>
     </nav>
   </div>
   <body>
-      <div class="content">
-        <div id='calendar'></div>
+      <div class="content" >
+       <form style="width: 95%; padding-bottom: 20px;">
+        <div class="text-right" style="padding-bottom: 20px;"><a class="btn btn-primary"   href="" style="width: 200px; ">Create New Patient</a></div>
+        <div class="card">
+          <div class="card-body">
+        
+          <div class="form-row">
+            <div class="col-4">
+              <label>Search:</label>
+              <input type="text" class="form-control" placeholder="Name, Acct #, Phone, or Patient ID">
+            </div>
+            <div class="col">
+              <label>Assigned To:</label>
+              <select class="form-control">
+                <option selected>Any Clinician or Payer</option>
+                <option>Test Clinician</option>
+                <option>Test Payor</option>
+              </select>
+            </div>
+            <div class="col">
+              <label>Filter:</label>
+              <select class="form-control">
+                <option selected>Active</option>
+                <option>Inactive</option>
+               
+              </select>
+            </div>
+          </div>
+        </form>
       </div>
-   
+    </div>
+
+        <div class="table-responsive">
+        <table class="table" style="width: 95%;">
+          
+          <thead style="color:white;">
+            <tr>
+              <th scope="col">Patient Name</th>
+              <th scope="col">DOB</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Last Appt</th>
+              <th scope="col">Next Appt</th>
+              <th scope="col">Payer</th>
+              <th scope="col">Clinicians</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Smith</th>
+              <td>07/19/1989</td>
+              <td>615-466-4444</td>
+              <td>07/31/2019</td>
+              <td>8/31/2020</td>
+              <td>Cigna Health</td>
+              <td>Judi Smith</td>
+            </tr>
+            <tr>
+              <td>Terry Test</th>
+                <td>01/31/1962</td>
+                <td>615-466-4251</td>
+                <td>05/31/2019</td>
+                <td>10/15/2020</td>
+                <td>BlueCross BlueShield</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+              <td>Stuart Little</th>
+                <td>04/16/1995</td>
+                <td>615-555-5555</td>
+                <td>06/15/2020</td>
+                <td>09/27/2020</td>
+                <td>Oscar Insurance</td>
+                <td>N/A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+   </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
